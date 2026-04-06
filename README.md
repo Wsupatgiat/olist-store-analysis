@@ -77,10 +77,10 @@ ___
 - **SQL**
 
 ## Project Structure
-`raw_data`: Original CSVs from Kaggle
-`data`: SQLite database (olist.db) and DB connection helper
-`scripts`: ETL pipeline: cleaning, upload to DB, CSV export
-`sql`: SQL queries used in analysis
-`exports`: Cleaned CSVs used by notebooks
-`notebooks`: Analysis notebooks (data profiling, time series, state, category)
-`utils`: Shared plotting and loading utilities
+``raw_data``: Original CSVs from Kaggle
+``data``: SQLite database (olist.db) and DB connection helper
+``scripts``: ETL pipeline: cleaning, upload to DB, CSV export
+``sql``: SQL queries used in analysis
+``exports``: Cleaned CSVs used by notebooks
+``notebooks``: Analysis notebooks (data profiling, time series, state, category)
+``utils``: Shared plotting and loading utilities
