@@ -3,7 +3,7 @@
 Dataset: [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 ___
 
-## Business Overview: Olist?
+## Business Overview: Olist
 Olist is the largest online retail marketplace in Brazil. It connects small and medium merchants to customers across the country, handling logistics and payments under a single contract. Sellers list products on the Olist platform and ship directly to customers using Olist's logistics partners.
 
 The dataset covers orders placed between 2016 and 2018, including order details, product information, seller locations, payments, and customer reviews.
@@ -30,13 +30,10 @@ Details are shown in ``data_profiling.ipynb``
 ### 2. Exploratory Data Analysis
 Four areas were analyzed:
 
-- How total revenue and order count changed month by month across 2017-2018; ``monthly_orders_analysis.ipynb``
+- How total revenue and order count changed month by month across 2017-2018: ``monthly_orders_analysis.ipynb``
 - Which Brazilian states generate the most revenue: ``state_revenue_analysis.ipynb``
 - Which product categories drive the most revenue: ``category_revenue_analysis.ipynb``
 - How the number of categories a seller operates in relates to their revenue: ``category_revenue_analysis.ipynb``
-
-### 3. Findings and Recommendations
-Key findings are summarized below. Full business recommendations are in `insights.md`.
 ___
 
 ## Key Findings
@@ -78,15 +75,12 @@ ___
 ## Tools Used
 - **Python** (pandas, numpy, matplotlib, seaborn, scipy, statsmodels)
 - **SQL**
-- **Jupyter Notebooks**
 
 ## Project Structure
-```
-raw_data: Original CSVs from Kaggle
-data: SQLite database (olist.db) and DB connection helper
-scripts: ETL pipeline: cleaning, upload to DB, CSV export
-sql: SQL queries used in analysis
-exports: Cleaned CSVs used by notebooks
-notebooks: Analysis notebooks (data profiling, time series, state, category)
-utils: Shared plotting and loading utilities
-```
+`raw_data`: Original CSVs from Kaggle
+`data`: SQLite database (olist.db) and DB connection helper
+`scripts`: ETL pipeline: cleaning, upload to DB, CSV export
+`sql`: SQL queries used in analysis
+`exports`: Cleaned CSVs used by notebooks
+`notebooks`: Analysis notebooks (data profiling, time series, state, category)
+`utils`: Shared plotting and loading utilities
